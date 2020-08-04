@@ -4,13 +4,8 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/users', (request, response) => {
-    console.log(request.body);
-    const users = [
-        {name : 'Henrique', age: 27}
-    ];
-
-    return response.json(users);
+app.get('/', (request, response) => {
+ return response.json({ message: 'Hello word'})
 });
 
 //Porta localhost:3333
