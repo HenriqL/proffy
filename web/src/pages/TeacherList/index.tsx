@@ -51,11 +51,12 @@ function TeacherList(){
                             Preço / Hora
                             <strong>R$ 100,00</strong>
                         </p>
+                        <button type="button">
+                            <img src={whatsappIcon} alt="whatsapp"/>
+                            Entrar em contato
+                        </button>
                     </footer>
-                    <button type="button">
-                        <img src={whatsappIcon} alt="whatsapp"/>
-                        Entrar em contato
-                    </button>
+
                 </article>
             </main>
 
