@@ -1,7 +1,8 @@
 import React from 'react';
-import './styles.css';
-
 import PageHeader from '../../components/PageHeader';
+import Input from '../../components/Input';
+
+import './styles.css';
 
 function TeacherForm(){
     return(
@@ -9,31 +10,20 @@ function TeacherForm(){
             <PageHeader title="Que incrivel que você quer dar aulas" 
                 description="O primeiro passo é preencher o formulario de inscrição"
             />
-
             <main>
                 <fieldset>
                     <legend>Seus dados</legend>
-                    <div className="imput-block">
-                        <label htmlFor="name">Nome completo</label>
-                        <input type="text" id=""/>
-                    </div>
+                    <Input name="name" label="Nome completo"/>
+                    <Input name="avatar" label="Avatar"/>
+                    <Input name="whatsapp" label="Whatsapp"/>
+                </fieldset>
 
-                    <div className="imput-block">
-                        <label htmlFor="avatar">Avatar</label>
-                        <input type="text" id="avatar"/>
-                    </div>
-
-                    <div className="imput-block">
-                        <label htmlFor="whatsapp">Whatsapp</label>
-                        <input type="text" id="whatsapp"/>
-                    </div>
+                <fieldset>
+                    <legend>Sobre a aula</legend>
+                    <Input name="subject" label="Matéria"/>
+                    <Input name="cost" label="Custo da sua hora por aula"/>
                 </fieldset>
             </main>
-
-
-
-
-
         </div>
     )
 }
