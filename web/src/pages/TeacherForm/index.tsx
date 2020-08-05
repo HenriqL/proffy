@@ -14,7 +14,9 @@ function TeacherForm(){
         { week_day: 2, from: '10:00', to: '18:00'},
 
     ]
+    function addNewScheduleItem(){
 
+    }
 
     return(
         <div id="page-teacher-form" className="container">
@@ -54,7 +56,7 @@ function TeacherForm(){
                 <fieldset>
                     <legend>
                         Horarios disponiveis
-                        <button type="button">+ Novo horario</button>
+                        <button type="button" onClick={addNewScheduleItem}>+ Novo horario</button>
                     </legend>
 
              
