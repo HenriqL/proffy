@@ -9,6 +9,7 @@ import { Feather } from '@expo/vector-icons';
 import api from '../../services/api';
 
 import styles from './styles'
+import { useFocusEffect } from '@react-navigation/native';
 
 
 
@@ -35,6 +36,9 @@ import styles from './styles'
 
         });
     }
+    useFocusEffect(()=>{
+        loadFavorites();
+    });
 
     function handlerToggleFilterVisible() {
         setIsfilterVisible(!isFilterVisible)
