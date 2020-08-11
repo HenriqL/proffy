@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
-import { TextInput, BorderlessButton } from 'react-native-gesture-handler';
+import { TextInput, BorderlessButton, RectButton } from 'react-native-gesture-handler';
 
 import { Feather } from '@expo/vector-icons';
 import styles from './styles'
@@ -54,7 +54,10 @@ import styles from './styles'
                                 />
                             </View>
                         </View>
-                        
+
+                      <RectButton style={styles.submitButton}>
+                          <Text style={styles.submitButtonText}>Buscar</Text>
+                        </RectButton>  
                     </View>
                 )}
             </PageHeader>
