@@ -1,11 +1,7 @@
-<h1>
-
-<center><img src="public/logo.svg"></center><br>
+<div style="text-align:center"><img src="public/logo.svg"></div><br>
 <h2 align="center"> Next Level Week #2 @RocketSeat
 </h2>
 
-
-</h1>
 
 ---
 ## 🔖 Sobre
