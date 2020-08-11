@@ -31,20 +31,26 @@ const TeacherItem: React.FunctionComponent<TeacherItemProps> = ({ teacher, favor
     }
 
     async function handleTogleFavorite(){
-        if(isFavorited){
-
-        }else{
-            const favorites = await AsyncStorage.getItem('favorites');
-            let favoritesArray = [];
+        const favorites = await AsyncStorage.getItem('favorites');
+        
+        let favoritesArray = [];
 
             if(favorites) {
                 favoritesArray = JSON.parse(favorites);
             }
+        
+        if(isFavorited){
+            const favoritesIndex = favoritesArray.findIndex((teacherItem: Teacher) => {
+                return teacherItem.id === teacher.id;
+            });
+            favoritesArray.splice(favoritesIndex, 1);
+
+        }else{
             favoritesArray.push(teacher);
 
-            setIsFavorited(true);
-            await AsyncStorage.setItem('favorites', JSON.stringify(favoritesArray))
+            setIsFavorited(true);      
         }
+        await AsyncStorage.setItem('favorites', JSON.stringify(favoritesArray))
 
     }
     
