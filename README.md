@@ -1,12 +1,13 @@
 <h1>
-<center>
-<img src="public/logo.svg"><br>
-Next Level Week #2
-</center>
+
+<center><img src="public/logo.svg"></center><br>
+<h2 align="center"> Next Level Week #2 @RocketSeat
+</h2>
+
 
 </h1>
 
-
+---
 ## 🔖 Sobre
 
 O Proffy é uma aplicação Web e Mobile feita para auxiliar na conexão entre os alunos e os professores. A aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, os horários disponíveis e o custo por hora, e aos alunos a possibilidade de buscar pelas aulas cadastradas.
