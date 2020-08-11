@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
@@ -15,11 +15,16 @@ import styles from './styles'
 
  function TeacherList(){
     const [teachers, setTeachers] = useState([]);
+    const [favorites, setFavorites] = useState([]);
     const [isFilterVisible, setIsfilterVisible] = useState(false);
 
     const [subject, setSubject] = useState('');
     const [week_day, setWeekDay] = useState('');
     const [time, setTime] = useState('');
+
+    useEffect(()=> {
+
+    }, []);
 
     function handlerToggleFilterVisible() {
         setIsfilterVisible(!isFilterVisible)
