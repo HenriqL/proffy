@@ -44,7 +44,8 @@ const TeacherItem: React.FunctionComponent<TeacherItemProps> = ({ teacher, favor
                 return teacherItem.id === teacher.id;
             });
             favoritesArray.splice(favoritesIndex, 1);
-
+            
+            setIsFavorited(false); 
         }else{
             favoritesArray.push(teacher);
 
