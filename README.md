@@ -49,4 +49,7 @@ A maratona foi ministrada pelo Mestre [Diego Fernandes](https://github.com/diego
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/HenriqL/proffy/blob/master/LICENSE) para mais detalhes.
 
+---
+
+Feito com ❤️ por **Henrique Silva** 👋🏽 **[Entre em contato](linkedin.com/in/henrique-silva-9a6b9a1b4)**
 
