@@ -1,6 +1,9 @@
 <h1 align="center">
 <img src="public/logo.svg">
 </h1>
+<h1 align="center">
+<img src="public/previa.png">
+</h1>
 <h2 align="center">
  Next Level Week #2 @RocketSeat
 </h2>
