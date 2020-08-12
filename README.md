@@ -1,8 +1,8 @@
 <h1 align="center">
-<img src="public/logo.svg">
+<img src="public/logo.png">
 </h1>
 <h1 align="center">
-<img src="public/previa.png">
+<img src="public/layout.png">
 </h1>
 <h2 align="center">
  Next Level Week #2 @RocketSeat
